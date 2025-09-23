@@ -10,7 +10,29 @@ namespace Задание_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("ok");
+            Book b = new Book();
+            b.Title = "Преступление и наказание";
+            b.Pages = 500;
+            b.PrintInfo();
+            Console.ReadKey();
+        }
+
+        public class Book
+        {
+            public string Title;
+            private int _pages;
+
+            public int Pages
+            {
+                get {  return _pages; }
+                set { if (value >= 0 ) _pages = value; }
+                
+            }
+            public void PrintInfo()
+            {
+                Console.WriteLine($"Книга: {Title}, страниц: {Pages}");
+            }
+            
         }
     }
 }
