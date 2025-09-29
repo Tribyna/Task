@@ -8,7 +8,7 @@ namespace Задание_1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) //КТ2
         {
             Book b = new Book();
             b.Title = "Преступление и наказание";
