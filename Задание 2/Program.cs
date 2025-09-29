@@ -10,7 +10,9 @@ namespace Задание_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("ok");
+            
         }
+
+
     }
 }
