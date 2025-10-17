@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace Задание_4
 {
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Book book = new Book("Hello", "World");
+            book.DispalayInfo();
+
+        }
+    }
     public class Book
     {
         public void DispalayInfo()
         {
-            Console.WriteLine("test");
+            Console.WriteLine($"{Title} {Author} {Year}");
+            Console.ReadKey();
         }
 
         public Book()
@@ -36,14 +46,5 @@ namespace Задание_4
         public string Title;
         public string Author;
         public int Year;
-    }
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Book book = new Book("z", "z", 17);
-            book.DispalayInfo();
-
-        }
     }
 }
